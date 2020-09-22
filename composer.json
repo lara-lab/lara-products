@@ -6,6 +6,8 @@
     "type": "project",
     "require": {
         "php": "^7.3",
+        "ext-redis": "*",
+        "ext-memcached": "*",
         "laravel/lumen-framework": "^8.0"
     },
     "require-dev": {
