@@ -4,11 +4,18 @@
     "keywords": ["framework", "laravel", "lumen"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lara-lab/oauth-token-validator.git"
+        }
+    ],
     "require": {
         "php": "^7.3",
         "ext-redis": "*",
         "ext-memcached": "*",
-        "laravel/lumen-framework": "^8.0"
+        "laravel/lumen-framework": "^8.0",
+        "lara-lab/oauth-token-validator": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9.1",
