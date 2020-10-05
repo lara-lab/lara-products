@@ -12,10 +12,11 @@
     ],
     "require": {
         "php": "^7.3",
-        "ext-redis": "*",
         "ext-memcached": "*",
+        "ext-redis": "*",
+        "lara-lab/oauth-token-validator": "^1.1",
         "laravel/lumen-framework": "^8.0",
-        "lara-lab/oauth-token-validator": "^1.0"
+        "thedevsaddam/lumen-route-list": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9.1",

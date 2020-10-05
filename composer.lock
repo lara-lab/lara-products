@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6dfe9aeb02179db0a5b99941d7f00a86",
+    "content-hash": "8066094aabcd4047ed66a614fd658d36",
     "packages": [
         {
             "name": "amineabri/base-repository",
@@ -2088,16 +2088,16 @@
         },
         {
             "name": "lara-lab/oauth-token-validator",
-            "version": "v1.0",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-lab/oauth-token-validator.git",
-                "reference": "d28c0ecc0925e64adb0a567cfb7b1b627a14025e"
+                "reference": "c0ec874a8799941ff3ab573a5988b84b0c4d27ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-lab/oauth-token-validator/zipball/d28c0ecc0925e64adb0a567cfb7b1b627a14025e",
-                "reference": "d28c0ecc0925e64adb0a567cfb7b1b627a14025e",
+                "url": "https://api.github.com/repos/lara-lab/oauth-token-validator/zipball/c0ec874a8799941ff3ab573a5988b84b0c4d27ec",
+                "reference": "c0ec874a8799941ff3ab573a5988b84b0c4d27ec",
                 "shasum": ""
             },
             "require": {
@@ -2141,10 +2141,10 @@
             ],
             "description": "The package adds some useful functionality to a Laravel/Lumen app which wants to be an oAuth2 client.",
             "support": {
-                "source": "https://github.com/lara-lab/oauth-token-validator/tree/v1.0",
+                "source": "https://github.com/lara-lab/oauth-token-validator/tree/v1.1",
                 "issues": "https://github.com/lara-lab/oauth-token-validator/issues"
             },
-            "time": "2020-10-05T11:47:30+00:00"
+            "time": "2020-10-05T12:33:36+00:00"
         },
         {
             "name": "laravel/lumen-framework",
@@ -5364,6 +5364,50 @@
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
+            "name": "thedevsaddam/lumen-route-list",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thedevsaddam/lumen-route-list.git",
+                "reference": "198633b7e9c23a12290dbee80f4a4d011b855207"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thedevsaddam/lumen-route-list/zipball/198633b7e9c23a12290dbee80f4a4d011b855207",
+                "reference": "198633b7e9c23a12290dbee80f4a4d011b855207",
+                "shasum": ""
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Thedevsaddam\\LumenRouteList\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saddam Hossain",
+                    "email": "thedevsaddam@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Display all the registered route list like laravel",
+            "homepage": "https://github.com/thedevsaddam/lumen-route-list",
+            "keywords": [
+                "lumen",
+                "lumen routes list",
+                "lumen-route-list",
+                "route-list",
+                "routes",
+                "thedevsaddam"
+            ],
+            "abandoned": true,
+            "time": "2017-09-24T05:18:44+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.2.0",
             "source": {
@@ -7564,8 +7608,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3",
-        "ext-redis": "*",
-        "ext-memcached": "*"
+        "ext-memcached": "*",
+        "ext-redis": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"

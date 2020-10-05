@@ -1,5 +1,9 @@
 <?php
 
+use AB\OAuthTokenValidator\Http\Middleware\ValidateLogoutTokenMiddleware;
+use AB\OAuthTokenValidator\Http\Middleware\ValidateTokenMiddleware;
+use AB\OAuthTokenValidator\Providers\OAuth2ClientServiceProvider;
+
 require_once __DIR__.'/../vendor/autoload.php';
 
 (new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
@@ -23,9 +27,9 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+ $app->withFacades();
 
-// $app->withEloquent();
+ $app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +52,8 @@ $app->singleton(
     App\Console\Kernel::class
 );
 
+$app->instance('path.config', app()->basePath() . DIRECTORY_SEPARATOR . 'config');
+
 /*
 |--------------------------------------------------------------------------
 | Register Config Files
@@ -60,6 +66,8 @@ $app->singleton(
 */
 
 $app->configure('app');
+$app->configure('cache');
+$app->configure('oauth-token-validator');
 
 /*
 |--------------------------------------------------------------------------
@@ -76,9 +84,11 @@ $app->configure('app');
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
-// $app->routeMiddleware([
+ $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+     'validateToken'       => ValidateTokenMiddleware::class,
+     'validateLogoutToken' => ValidateLogoutTokenMiddleware::class
+ ]);
 
 /*
 |--------------------------------------------------------------------------
@@ -91,9 +101,11 @@ $app->configure('app');
 |
 */
 
-// $app->register(App\Providers\AppServiceProvider::class);
+ $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->register(OAuth2ClientServiceProvider::class);
+$app->register(\Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
