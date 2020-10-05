@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('users', static function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->uuid('uuid')->unique();
-            $table->string('username')->unique()->nullable()->default(null);
+            $table->string('username', 100)->unique()->nullable()->default(null);
             $table->timestamp('createdAt')->useCurrent();
             $table->timestamp('updatedAt')->useCurrent();
         });
