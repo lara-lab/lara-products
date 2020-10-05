@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b02fad291c6b00b7b9365edf08fc023c",
+    "content-hash": "3b46a81b89c1597e3077a61d55ec4f43",
     "packages": [
         {
             "name": "amineabri/base-repository",
