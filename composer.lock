@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8066094aabcd4047ed66a614fd658d36",
+    "content-hash": "b02fad291c6b00b7b9365edf08fc023c",
     "packages": [
         {
             "name": "amineabri/base-repository",
@@ -2088,16 +2088,16 @@
         },
         {
             "name": "lara-lab/oauth-token-validator",
-            "version": "v1.1",
+            "version": "v1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-lab/oauth-token-validator.git",
-                "reference": "c0ec874a8799941ff3ab573a5988b84b0c4d27ec"
+                "reference": "0716462edf0f8bf7173aaaa3f60527a41f3318d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-lab/oauth-token-validator/zipball/c0ec874a8799941ff3ab573a5988b84b0c4d27ec",
-                "reference": "c0ec874a8799941ff3ab573a5988b84b0c4d27ec",
+                "url": "https://api.github.com/repos/lara-lab/oauth-token-validator/zipball/0716462edf0f8bf7173aaaa3f60527a41f3318d2",
+                "reference": "0716462edf0f8bf7173aaaa3f60527a41f3318d2",
                 "shasum": ""
             },
             "require": {
@@ -2141,10 +2141,10 @@
             ],
             "description": "The package adds some useful functionality to a Laravel/Lumen app which wants to be an oAuth2 client.",
             "support": {
-                "source": "https://github.com/lara-lab/oauth-token-validator/tree/v1.1",
+                "source": "https://github.com/lara-lab/oauth-token-validator/tree/v1.3",
                 "issues": "https://github.com/lara-lab/oauth-token-validator/issues"
             },
-            "time": "2020-10-05T12:33:36+00:00"
+            "time": "2020-10-05T13:50:59+00:00"
         },
         {
             "name": "laravel/lumen-framework",
